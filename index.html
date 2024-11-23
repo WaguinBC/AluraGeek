@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=IBM+Plex+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Challenge AluraGeek</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <img class="logoAlura" src="./src/logoGeek.svg" alt="Logo do AluraGeek">
+        </nav>
+    </header>
+
+    <main>
+        <div class="produtos">
+            <section class="produtos__meus-produtos">
+                <h1>MEUS PRODUTOS:</h1>
+                <div data-product class="container">
+            </section>
+    
+            <section class="formulario">
+                <h1>ADICIONAR PRODUTO:</h2>
+                <form class="form-container" data-form>
+                    <input data-nome type="text" placeholder="nome...">
+                    <input data-preco type="text" placeholder="preço...">
+                    <input data-imagem type="text" placeholder="imagem...">
+                    <span data-mensagem class="mensagemError">
+                        <button type="submit" class="button-submit" id="guardar">Guardar</button>
+                        <button type="reset" class="button-clear" id="limpar">Limpar</button>
+                    </span>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- module porque temos que indicar para o navegador que estamos trabalhando com o import e export -->
+    <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+:root{
+    --cor-de-fundo: #5d04d9;
+    --cor-font: #ffffff;
+    --cor-borda: #000000;
+    --cor-borda-input: #03318c;
+
+    --font: "IBM Plex Mono", serif;
+    --font-titulo: "Press Start 2P", system-ui;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-de-fundo);
+    padding: 1.25rem;   
+}
+
+.logoAlura{
+    width: 23.37rem;
+    height: 3.5rem;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 30px 50px 30px;
+}
+
+.produtos__meus-produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    height: 74vh;
+}
+
+.produtos__meus-produtos h1{
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 78px 10px;
+    justify-content: space-around;
+    width: 44rem;
+    height: 60.68rem;
+    background-color: #ffffff;
+    padding: 40px 32px 15px 15px;
+    filter: drop-shadow(-10px 10px 2px #948d8dc9);
+    overflow: scroll;
+}
+
+/* .container::-webkit-scrollbar{
+    width: 12px;
+} */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-de-fundo);
+    width: 12.25rem;
+    height: 16.12rem;
+    padding: 10px;
+    border: solid 3px var(--cor-borda);
+    border-radius: 10px;
+    color: var(--cor-font);
+    font-family: var(--font);
+}
+
+.img-container{
+    max-width: 11.9rem;
+    max-height: 10.87rem;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: solid 3px var(--cor-borda);
+}
+
+.img-container img{
+    width: 11.9rem;
+    height: 10.87rem;
+    object-fit: cover;
+}
+
+.card-container--info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-container--value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.formulario{
+    width: 29.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.formulario h1{
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-container input{
+    width: 24.5rem;
+    height: 3.62rem;
+    border: solid 3px var(--cor-borda-input);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.8px;
+    color: var(--cor-borda-input);
+}
+
+.form-container input::placeholder{
+    color: var(--cor-borda-input);
+}
+
+.mensagemError{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+
+.button-submit{
+    background-color: var(--cor-borda-input);
+    color: var(--cor-font);
+    width: 11.75rem;
+    height: 3.43rem;
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.button-clear{
+    background-color: var(--cor-font);
+    color: var(--cor-borda-input);
+    border: solid;
+    width: 11.75rem;
+    height: 3.43rem;
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    font-weight: 500;
+}
+
+@media (max-width: 430px) {
+    .produtos{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 50px 0 10px 0;
+    }
+
+    .formulario{
+        width: 26.87rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .form-container input{
+        width: 21.87rem;
+        height: 3.62rem;
+    }
+
+    .button-submit{
+        width: 10.25rem;
+        height: 3.43rem;
+    }
+    
+    .button-clear{
+        width: 10.25rem;
+        height: 3.43rem;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 78px 10px;
+        justify-content: space-around;
+        width: 42.94rem;
+        height: 43.12rem;
+    }
+
+    .produtos__meus-produtos{
+        width: 42.94rem;
+        height: 43.12rem;
+        padding: 50px 16px 50px 16px;
+    }
+
+    .produtos__meus-produtos h1{
+        width: 26.75rem;
+        margin-left: -180px;
+    }
+}
